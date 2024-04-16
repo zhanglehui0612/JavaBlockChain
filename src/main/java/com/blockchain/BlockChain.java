@@ -28,7 +28,7 @@ public class BlockChain {
      */
     private Block createGenesisBlock() {
         List<Transaction> transactions = new ArrayList<>();
-        return new Block(0, "0", transactions);
+        return new Block(0, null, transactions);
     }
 
     /**

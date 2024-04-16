@@ -13,9 +13,6 @@ public class Client {
         transactions1.add(new Transaction("0xC3b0F111","0xC3b0F121", 1.2d));
         blockchain.addBlock(new Block(1, blockchain.getLatestBlock().hash, transactions1));
 
-        boolean error = blockchain.isChainValid();
-        System.out.println("测试1区块链是否是有效: " + error);
-
         List<Transaction> transactions2 = new ArrayList<>();
         transactions2.add(new Transaction("0xC4b0F127","0xC5b0F128", 2.1d));
         transactions2.add(new Transaction("0xC4b0F129","0xC5b0F123", 5.2d));
