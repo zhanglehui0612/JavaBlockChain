@@ -61,13 +61,13 @@ public class BlockChain {
 
             // 校验当前区块的hash值是否发生变化
             if (!currentBlock.hash.equals(currentBlock.calculateHash())) {
-                System.out.println("Current Hashes not equal");
+                System.out.println("当前区块的的哈希值不相等");
                 return false;
             }
 
             // 校验当前区块的上一个区块hash值是否相等
             if (!previousBlock.hash.equals(currentBlock.prevBlockHash)) {
-                System.out.println("Previous Hashes not equal");
+                System.out.println("当前区块的前驱节的哈希值和前驱节点区块不相等");
                 return false;
             }
         }
